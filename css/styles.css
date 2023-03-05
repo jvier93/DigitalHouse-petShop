@@ -11,6 +11,8 @@ ol {
   list-style: none;
 }
 
+/* Header */
+
 header {
   color: #fff;
 }
@@ -25,6 +27,8 @@ header .barra-menu-principal {
   font-size: 13px;
 }
 
+/* Main */
+
 /* Es mejor ir haciendo la ruta completa hasta llegar a donde quiero o podria poner directamente header .banner */
 main .banner {
   text-align: center;
@@ -32,8 +36,10 @@ main .banner {
   font-size: 16px;
 }
 
-main.banner h2 {
+main .banner h2 {
   font-size: 30px;
+  font-weight: 400;
+  background-color: #fff;
 }
 
 main .banner a {
@@ -69,13 +75,28 @@ section article .precio-articulo {
   color: #f0a83e;
 }
 
+section form h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+  font-weight: 700;
+}
+
 footer .footer-header {
   background-color: #f0a83e;
 }
 
+footer .footer-header h2 {
+  color: #fff;
+  font-size: 20px;
+}
+
 footer .footer-body {
   background-color: #3c2313;
-  font-weight: 700;
 }
 
 footer .footer-body p {
