@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
 body {
+  color: #3c2313;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #3c2313;
+  max-width: 1024px;
+  margin: auto;
 }
 
 ul,
@@ -20,36 +27,78 @@ header {
 header .barra-superior {
   background-color: #222222;
   font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 60px;
+}
+
+header .barra-superior ul {
+  display: flex;
+  gap: 10px;
 }
 
 header .barra-menu-principal {
   background-color: #f0a83e;
   font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 40px;
+}
+
+header .barra-menu-principal nav ul {
+  display: flex;
+  gap: 20px;
 }
 
 /* Main */
 
 /* Es mejor ir haciendo la ruta completa hasta llegar a donde quiero o podria poner directamente header .banner */
-main .banner {
+main .seccion-banner {
   text-align: center;
-
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  width: 1024px;
+  height: 409px;
   font-size: 16px;
+  position: relative;
 }
 
-main .banner h2 {
+main .contenedor-de-texto-banner {
+  position: absolute;
+  right: 40px;
+  bottom: 160px;
+  width: 365px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+main .seccion-banner h2 {
   font-size: 30px;
   font-weight: 400;
   background-color: #fff;
+  padding: 10px;
 }
 
-main .banner a {
+main .seccion-banner a {
   background-color: #f0a83e;
   color: #fff;
+  padding: 15px 23px;
   text-transform: uppercase;
 }
 
-main .banner img {
+main .seccion-banner img {
   background-size: cover;
+}
+
+.seccion-productos {
+  text-align: center;
+}
+
+main .encabezado-de-seccion {
+  margin: 20px 0px;
 }
 
 main .encabezado-de-seccion img {
@@ -66,18 +115,79 @@ main .encabezado-de-seccion h1 {
   font-weight: 700;
 }
 
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+
+section .contenedor-productos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 0px;
+}
+
 section article {
   font-size: 15px;
   font-weight: 500;
+  background-color: #fbfaf6;
+  padding-bottom: 7px;
 }
 
 section article .precio-articulo {
   color: #f0a83e;
 }
 
-section form h2 {
+.section-contactanos form {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+.section-contactanos form h2 {
   font-size: 25px;
   font-weight: 700;
+  padding: 10px 0px;
+}
+
+.section-contactanos form input {
+  width: 340px;
+  height: 40px;
+  padding: 0px 14px;
+  border-style: none;
+
+  color: #fff;
+  font-size: 9px;
+  background-color: #3c2313;
+  border-radius: 15px;
+}
+
+.section-contactanos form input::placeholder {
+  color: #fff;
+}
+
+.section-contactanos form div {
+  padding: 30px 0px;
+}
+
+.section-contactanos form .boton-resetear,
+.boton-enviar {
+  width: 110px;
+  height: 34px;
+  border-style: none;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.boton-resetear {
+  background-color: #8a8787;
+}
+
+.boton-enviar {
+  background-color: #f0a83e;
 }
 
 /* Footer */
@@ -88,6 +198,17 @@ footer {
 
 footer .footer-header {
   background-color: #f0a83e;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-header div {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-header div img {
+  width: 40px;
 }
 
 footer .footer-header h2 {

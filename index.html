@@ -15,16 +15,11 @@
     <header>
       <div class="barra-superior">
         <p>Grandes ofertas en comederos</p>
-        <div>
-          <ul>
-            <li>Español</li>
-            <li>English</li>
-          </ul>
-          <ul>
-            <li>ARG$</li>
-            <li>UYU$</li>
-          </ul>
-        </div>
+
+        <ul>
+          <li>Español <i class="fa-solid fa-angle-down"></i></li>
+          <li>ARG$ <i class="fa-solid fa-angle-down"></i></li>
+        </ul>
       </div>
       <div class="barra-menu-principal">
         <div>
@@ -62,15 +57,15 @@
       </div>
     </header>
     <main>
-      <section>
-        <div class="banner">
+      <section class="seccion-banner">
+        <div class="contenedor-de-texto-banner">
           <h2>¡Es un placer tenerte aquí!</h2>
-          <img src="./img/banner.jpg" alt="banner" />
-          <p>¡Comederos en decuento!</p>
+
+          <p>¡Comederos en descuento!</p>
           <a>Comederos</a>
         </div>
       </section>
-      <section>
+      <section class="seccion-productos">
         <div class="encabezado-de-seccion">
           <img src="./img/huella-naranja.png" />
           <h1>Productos Destacados</h1>
@@ -82,7 +77,7 @@
             <a>Comida</a>
           </div>
         </div>
-        <div>
+        <div class="contenedor-productos">
           <article>
             <img src="./img/churrasquito.png" alt="imagen producto" />
 
@@ -103,18 +98,18 @@
           </article>
         </div>
       </section>
-      <secion>
+      <section class="section-contactanos">
         <form>
           <h2>Contáctanos</h2>
-          <input />
-          <input />
-          <input />
-          <div>
-            <button>Resetear</button>
-            <button>Enviar</button>
+          <input placeholder="Nombre y Apellido" type="text" />
+          <input placeholder="Ingresá tu correo electrónico" type="text" />
+          <input placeholder="Teléfono" type="text" />
+          <div class="controles-formulario">
+            <button class="boton-resetear">Resetear</button>
+            <button class="boton-enviar">Enviar</button>
           </div>
         </form>
-      </secion>
+      </section>
     </main>
     <footer>
       <div class="footer-header">
