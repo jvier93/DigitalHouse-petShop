@@ -158,7 +158,6 @@ section article .precio-articulo {
   height: 40px;
   padding: 0px 14px;
   border-style: none;
-
   color: #fff;
   font-size: 9px;
   background-color: #3c2313;
@@ -200,15 +199,50 @@ footer .footer-header {
   background-color: #f0a83e;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px 23px;
 }
 
 footer .footer-header div {
   display: flex;
+
   align-items: center;
 }
 
 footer .footer-header div img {
   width: 40px;
+}
+
+footer .footer-header form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer .footer-header form input {
+  width: 340px;
+  height: 40px;
+  padding: 0px 14px;
+  border-style: none;
+  color: #fff;
+  font-size: 9px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+footer .footer-header form input::placeholder {
+  color: #a0a0a0;
+}
+
+footer .footer-header form button {
+  background-color: #3c2313;
+  font-size: 9px;
+  font-weight: 700;
+  width: 70px;
+  height: 34px;
+  border-style: none;
+  color: #fff;
+  border-radius: 15px;
 }
 
 footer .footer-header h2 {
@@ -218,6 +252,10 @@ footer .footer-header h2 {
 
 footer .footer-body {
   background-color: #3c2313;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
 }
 
 footer .footer-body p {
@@ -228,6 +266,17 @@ footer .footer-body p {
 footer .footer-body p span {
   font-size: 20px;
   color: #fff;
+}
+footer .footer-body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+footer .footer-body ul li {
+  display: flex;
+  gap: 25px;
 }
 
 footer .footer-body ul img {
