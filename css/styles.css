@@ -47,7 +47,7 @@ header .barra-menu-principal {
   padding: 19px 40px;
 }
 
-header .barra-menu-principal nav i {
+header .barra-menu-principal nav .icono-menu {
   display: none;
 }
 
@@ -309,7 +309,7 @@ footer .footer-footer {
     display: none;
   }
 
-  header .barra-menu-principal nav i {
+  header .barra-menu-principal nav .icono-menu {
     display: block;
   }
 
