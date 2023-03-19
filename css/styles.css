@@ -9,6 +9,7 @@ body {
   color: #3c2313;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+
   max-width: 1024px;
   margin: auto;
 }
@@ -46,6 +47,10 @@ header .barra-menu-principal {
   padding: 19px 40px;
 }
 
+header .barra-menu-principal nav i {
+  display: none;
+}
+
 header .barra-menu-principal nav ul {
   display: flex;
   gap: 20px;
@@ -53,21 +58,19 @@ header .barra-menu-principal nav ul {
 
 /* Main */
 
-/* Es mejor ir haciendo la ruta completa hasta llegar a donde quiero o podria poner directamente header .banner */
 main .seccion-banner {
-  text-align: center;
+  display: flex;
+  justify-content: end;
+  align-items: center;
   background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
-  width: 1024px;
+  max-width: 1024px;
   height: 409px;
   font-size: 16px;
-  position: relative;
+  padding: 0px 10px;
 }
 
 main .contenedor-de-texto-banner {
-  position: absolute;
-  right: 40px;
-  bottom: 160px;
   width: 365px;
   display: flex;
   flex-direction: column;
@@ -75,11 +78,16 @@ main .contenedor-de-texto-banner {
   gap: 12px;
 }
 
-main .seccion-banner h2 {
+main .contenedor-de-texto-banner h2 {
+  border-radius: 5px;
+  background-color: #fff;
   font-size: 30px;
   font-weight: 400;
-  background-color: #fff;
   padding: 10px;
+}
+
+main .contenedor-de-texto-banner a {
+  border-radius: 5px;
 }
 
 main .seccion-banner a {
@@ -129,6 +137,7 @@ section .contenedor-productos {
 }
 
 section article {
+  width: 265px;
   font-size: 15px;
   font-weight: 500;
   background-color: #fbfaf6;
@@ -168,11 +177,15 @@ section article .precio-articulo {
   color: #fff;
 }
 
-.section-contactanos form div {
-  padding: 30px 0px;
+.section-contactanos form .controles-formulario {
+  padding: 30px 6px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
 }
 
-.section-contactanos form .boton-resetear,
+.section-contactanos .controles-formulario .boton-resetear,
 .boton-enviar {
   width: 110px;
   height: 34px;
@@ -280,11 +293,7 @@ footer .footer-body ul li {
 }
 
 footer .footer-body ul img {
-  width: 58px;
-}
-
-footer .footer-body img {
-  width: 166px;
+  width: 66px;
 }
 
 footer .footer-footer {
@@ -293,4 +302,81 @@ footer .footer-footer {
   color: #fff;
   font-weight: 700;
   font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  header .barra-superior {
+    display: none;
+  }
+
+  header .barra-menu-principal nav i {
+    display: block;
+  }
+
+  header .barra-menu-principal nav ul {
+    display: none;
+  }
+
+  main .seccion-banner {
+    justify-content: center;
+    padding: 0px;
+  }
+
+  main .contenedor-de-texto-banner {
+    align-items: flex-end;
+  }
+
+  main .contenedor-de-texto-banner a {
+    margin-right: 10px;
+  }
+
+  section .contenedor-productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section article {
+    width: 239px;
+  }
+
+  .section-contactanos form h2 {
+    font-size: 40px;
+  }
+
+  .section-contactanos form .controles-formulario .boton-resetear,
+  .boton-enviar {
+    width: 50%;
+    height: 45px;
+  }
+
+  footer .footer-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  footer .footer-header form input {
+    width: 261px;
+  }
+
+  footer .footer-header form button {
+    width: 100px;
+    font-size: 15px;
+  }
+
+  footer .footer-body {
+    flex-direction: column-reverse;
+    padding: 10px 0px;
+  }
+
+  footer .footer-body p span {
+    font-size: 24px;
+  }
+
+  footer .footer-body p {
+    font-size: 13px;
+  }
+
+  footer .footer-footer {
+    font-size: 13px;
+  }
 }
