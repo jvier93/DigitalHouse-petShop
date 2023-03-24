@@ -9,9 +9,22 @@ body {
   color: #3c2313;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-
+  background-color: #e5e5e5;
   max-width: 1024px;
   margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
 }
 
 ul,
@@ -56,7 +69,17 @@ header .barra-menu-principal nav ul {
   gap: 20px;
 }
 
+header .barra-menu-principal nav ul li a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1b0";
+}
+
 /* Main */
+
+main {
+  background-color: #fff;
+}
 
 main .seccion-banner {
   display: flex;
@@ -64,7 +87,7 @@ main .seccion-banner {
   align-items: center;
   background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
-  max-width: 1024px;
+
   height: 409px;
   font-size: 16px;
   padding: 0px 10px;
@@ -216,14 +239,9 @@ footer .footer-header {
   padding: 10px 23px;
 }
 
-footer .footer-header div {
-  display: flex;
-
-  align-items: center;
-}
-
-footer .footer-header div img {
-  width: 40px;
+.footer-header h2::before {
+  content: url(../img/correo.png);
+  margin-right: 10px;
 }
 
 footer .footer-header form {
@@ -304,6 +322,8 @@ footer .footer-footer {
   font-size: 10px;
 }
 
+/* Medias querys */
+
 @media (max-width: 768px) {
   header .barra-superior {
     display: none;
@@ -339,6 +359,10 @@ footer .footer-footer {
     width: 239px;
   }
 
+  section article img {
+    width: 239px;
+  }
+
   .section-contactanos form h2 {
     font-size: 40px;
   }
@@ -352,6 +376,9 @@ footer .footer-footer {
   footer .footer-header {
     flex-direction: column;
     gap: 16px;
+  }
+  .footer-header h2::before {
+    margin-right: 24px;
   }
 
   footer .footer-header form input {
