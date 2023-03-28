@@ -58,6 +58,14 @@ select {
   font-size: 10px;
 }
 
+select {
+  cursor: pointer;
+}
+
+select option {
+  cursor: pointer;
+}
+
 header .barra-menu-principal {
   background-color: #f0a83e;
   font-size: 13px;
