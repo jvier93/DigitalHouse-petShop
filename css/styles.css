@@ -19,7 +19,7 @@ a {
 }
 
 a:visited {
-  color: #fff;
+  color: inherit;
 }
 
 a:hover,
